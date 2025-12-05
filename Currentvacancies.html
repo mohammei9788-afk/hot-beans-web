@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Current Vacancies</title>
+    <script src="WorkForUs.js"></script>
+        <link rel="stylesheet" href="stylesheet1.css">
+</head>
+<body>
+    <img src="hotbeans1.png"
+    <header><h1>Current Vacancies</h1></header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="Links.html">Useful Links</a>
+        <a href="employees.html">Employees</a>
+        <a href="workforus.html">Work For Us</a>
+        <a href="contactus.html">Contact Us</a>
+        <a href="currentvacancies.html">Vacancies</a>
+        <a href="companyprofile.html">Company Profile</a>
+    </nav>
+
+    <h2>Please complete the following online application form </h2>
+    <h2>All fields marked with a * are required</h2>
+    <form name="VacancyApplicationForm" action="ThankYou.html" method="get">
+
+        <p>
+            <label>* First Name:</label>
+            <!--input text box-->
+            <input type="text" id="fname" name="fname" />
+            <br />
+            <label id="fNameError" class="Error"></label>
+        </p>
+        <p>
+            <label>* last Name:</label>
+            <input type="text" id="sname" name="sname" />
+            <br />
+            <label id="sNameError" class="Error"></label>
+        </p>
+        <p>
+            <label>* Are you a UK resident?</label>
+            <input type="radio" id="ukResidentYes" name="ukResident" value="Yes"><label for="ukResidentYes">Yes</label>
+            <input type="radio" id="ukResidentNo" name="ukResident" value="No"><label for="ukResidentNo">No</label>
+            <br />
+            <label id="ukResidentError" class="Error"></label>
+        </p>
+        <p>
+            <label>* Please your telephone contact details</label>
+            <input type="text" id="telNo" name="telNo" />
+            <br />
+            <label id="telNoError" class="Error"></label>
+        </p>
+
+        <p>
+            <label>* please select the job you are applying for: </label>
+            <select name="JobType" id="JobType">
+
+                <option value="Senior Web Developer">Junior Web Developer</option>
+                <option value="Senior Web Developer">Senior Web Developer</option>
+                <option value="Web Analyst">Web Analyst</option>
+
+            </select>
+            <br />
+            <label id="JobTypeError" class="Error"></label>
+        </p>
+
+        <p>
+            <label for="txtAnyOtherInfo">Please enter any other information to support your application:</label>
+            <textarea id="txtAnyOtherInfo" name="txtAnyOtherInfo" rows="4" cols="50">
+                        </textarea>
+
+        </p>
+
+        <p>
+            <button onclick="return ValidateVacancyForm()">Apply Now</button>
+        </p>
+
+
+    </form>
+
+    <footer>© 2025 Hot Beans</footer>
+
+</body>
+</html>
